@@ -1,113 +1,340 @@
-import Image from 'next/image'
-
-export default function Home() {
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { AiFillLinkedin, AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
+import { CgWebsite } from "react-icons/cg";
+import {
+  FaGem,
+  FaReact,
+  FaRocket,
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaNodeJs,
+  FaGithub,
+  FaLinux,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiMongodb,
+  SiNextdotjs,
+  SiJira,
+  SiExpress,
+  SiGmail
+} from "react-icons/si";
+import placeholder from "@/public/assets/pic10.jpg";
+const Home = () => {
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <>
+      <header className="containers" id="home">
+        <h1 className="title">Hello, I'm Joseph M.</h1>
+        <p className="title-p">
+          Fullstack developer with specialization on Front-end. I create
+          seamless web experiences for end-users.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div>
+          <Link href="/about" className="about-link">
+            About me
+          </Link>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <div className="social-links">
+          <div>
+            <Link
+              href="https://www.linkedin.com/in/joseph-muriuki-266186219"
+              target="_blank"
+            >
+              LinkedIn
+            </Link>
+            <AiFillLinkedin className="react-icons" />
+          </div>
+          <div>
+            <Link href="https://wellfound.com/u/joseph-mariga" target="_blank">
+              Wellfound
+            </Link>
+          </div>
+          <div>
+            <Link href="https://twitter.com/joseph_m254" target="_blank">
+              Twitter
+            </Link>
+            <AiOutlineTwitter className="react-icons" />
+          </div>
+          <div>
+            <Link href="https://github.com/Mariga94" target="_blank">
+              Github
+            </Link>
+            <AiFillGithub className="react-icons" />
+          </div>
+        </div>
+        <section>
+          <h2 className="section-title">About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+            exercitationem porro temporibus quod eligendi iure ipsum, alias
+            quidem ullam expedita velit. Dignissimos est itaque expedita commodi
+            ea maiores voluptatibus a!
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+        </section>
+      </header>
+      <section className="containers project-section" id="projects">
+        <h2 className="section-title">Featured Projects</h2>
+        <div className="projects-div">
+          <article>
+            <Image src={placeholder} alt="project-image" layout="responsive" />
+            <h3 className="project-title">Porfolio website</h3>
+            <h4>Next React Tailwind</h4>
+            <p>
+              My personal website build to showcase my porfolio and experiences
+              as a software developer
+            </p>
+            <div className="view-links">
+              <Link href="" className="view-live-link">
+                View Live
+              </Link>
+              <Link href="" className="view-code-link">
+                View Code
+              </Link>
+            </div>
+          </article>
+          <article>
+            <Image src={placeholder} alt="project-image" layout="responsive" />
+            <h3 className="project-title">Porfolio website</h3>
+            <h4>Next React Tailwind</h4>
+            <p>
+              My personal website build to showcase my porfolio and experiences
+              as a software developer
+            </p>
+            <div className="view-links">
+              <Link href="" className="view-live-link">
+                View Live
+              </Link>
+              <Link href="" className="view-code-link">
+                View Code
+              </Link>
+            </div>
+          </article>
+          <article>
+            <Image src={placeholder} alt="project-image" layout="responsive" />
+            <h3 className="project-title">Porfolio website</h3>
+            <h4>Next React Tailwind</h4>
+            <p>
+              My personal website build to showcase my porfolio and experiences
+              as a software developer
+            </p>
+            <div className="view-links">
+              <Link href="" className="view-live-link">
+                View Live
+              </Link>
+              <Link href="" className="view-code-link">
+                View Code
+              </Link>
+            </div>
+          </article>
+          <article>
+            <Image src={placeholder} alt="project-image" layout="responsive" />
+            <h3 className="project-title">Porfolio website</h3>
+            <h4>Next React Tailwind</h4>
+            <p>
+              My personal website build to showcase my porfolio and experiences
+              as a software developer
+            </p>
+            <div className="view-links">
+              <Link href="" className="view-live-link">
+                View Live
+              </Link>
+              <Link href="" className="view-code-link">
+                View Code
+              </Link>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section className="containers service">
+        <h2 className="section-title">Services I offer</h2>
+        <div className="service-section">
+          <article>
+            <CgWebsite className="service-icon" />
+            <div>
+              <h3 className="project-title">Website Development</h3>
+              <p>
+                Building custom websites from scratch using HTML, CSS, and
+                JavaScript.
+              </p>
+            </div>
+          </article>
+          <article>
+            <FaReact className="service-icon" />
+            <div>
+              <h3 className="project-title">Front-end Development</h3>
+              <p>
+                I specialize in developing interactive and dynamic user
+                interfaces using modern JavaScript frameworks like React and
+                Next.js. Additionally, I have hands-on experience in
+                implementing user interfaces (UI) and crafting engaging user
+                experiences (UX) designs.
+              </p>
+            </div>
+          </article>
+          <article>
+            <FaPython className="service-icon" />
+            <div>
+              <h3 className="project-title">Back-end Development</h3>
+              <ul>
+                <li>
+                  Building server-side applications and APIs using technologies
+                  like Node.js, Python, etc.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <FaRocket className="service-icon" />
+            <div>
+              <h3 className="project-title">Full-stack Development</h3>
+              <p>
+                "I offer comprehensive end-to-end solutions to clients,
+                encompassing both front-end and back-end development. By
+                seamlessly integrating front-end and back-end components, I
+                ensure a cohesive and user-friendly experience for users."
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section className="containers tools">
+        <h2 className="section-title">Tools & Skills</h2>
+        <section className="tool-section">
+          <article>
+            <h3 className="project-title">Front-end</h3>
+            <ul>
+              <li>
+                <FaHtml5 className="tool-icon" />
+                <span>HTML</span>
+              </li>
+              <li>
+                <FaCss3Alt className="tool-icon" />
+                <span>CSS</span>
+              </li>
+              <li>
+                <IoLogoJavascript className="tool-icon" />
+                <span>Javascript</span>
+              </li>
+              <li>
+                <SiTypescript className="tool-icon" />
+                <span>Typescript</span>
+              </li>
+              <li>
+                <FaReact className="tool-icon" />
+                <span>React</span>
+              </li>
+              <li>
+                <SiNextdotjs className="tool-icon" />
+                <span>Next</span>
+              </li>
+              <li>
+                <SiTailwindcss className="tool-icon" />
+                <span>Taiwind</span>
+              </li>
+              <FaSass className="tool-icon" />
+              <li>Sass</li>
+            </ul>
+          </article>
+          <article>
+            <h3 className="project-title">Backend</h3>
+            <ul>
+              <li>
+                <FaNodeJs className="tool-icon" />
+                <span>Nodejs</span>
+              </li>
+              <li>
+                <IoLogoJavascript className="tool-icon" />
+                <span>Javascript</span>
+              </li>
+              <li>
+                <SiTypescript className="tool-icon" />
+                <span>Typescript</span>
+              </li>
+              <li>
+                <SiExpress className="tool-icon" />
+                <span>ExpressJS</span>
+              </li>
+              <li>
+                <FaPython className="tool-icon" />
+                <span>Python</span>
+              </li>
+              <li>
+                <SiMongodb className="tool-icon" />
+                MongoDB
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3 className="project-title">Miscellaneous</h3>
+            <ul>
+              <li>
+                <FaGithub className="tool-icon" />
+                <span>Github</span>
+              </li>
+              <li>
+                <FaLinux className="tool-icon" />
+                <span>Linux</span>
+              </li>
+              <li>
+                <SiJira className="tool-icon" />
+                <span>Jira</span>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section className="languages">
+          <p>
+            I speak <span className="flag">English GB</span>
           </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
+          <p>
+            Nazungumza <span>Kiswahi SWA</span>
           </p>
-        </a>
+        </section>
+      </section>
+      <section className="containers" id="contact">
+        <h3 className="section-title">Connect with me:</h3>
+        <section className="contact-section">
+          <h3 className="project-title">Reach me through socials</h3>
+          <section className="contact-section-socials">
+          <div>
+              <Link
+                href="mailto:josephmariga@duck.com"
+                target="_blank"
+              >
+                <SiGmail className="contact-react-icons" />
+              </Link>
+            </div>
+            <div>
+              <Link
+                href="https://www.linkedin.com/in/joseph-muriuki-266186219"
+                target="_blank"
+              >
+                <AiFillLinkedin className="contact-react-icons" />
+              </Link>
+            </div>
+            <div>
+              <Link href="https://twitter.com/joseph_m254" target="_blank">
+                <AiOutlineTwitter className="contact-react-icons" />
+              </Link>
+            </div>
+            <div>
+              <Link href="https://github.com/Mariga94" target="_blank">
+                <AiFillGithub className="contact-react-icons" />
+              </Link>
+            </div>
+          </section>
+        </section>
+      </section>
+    </>
+  );
+};
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default Home;
