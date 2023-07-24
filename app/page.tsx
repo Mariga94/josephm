@@ -23,11 +23,10 @@ import {
   SiNextdotjs,
   SiJira,
   SiExpress,
-  SiGmail
+  SiGmail,
 } from "react-icons/si";
 import placeholder from "@/public/assets/pic10.jpg";
 const Home = () => {
-  
   return (
     <>
       <header className="containers" id="home">
@@ -238,8 +237,10 @@ const Home = () => {
                 <SiTailwindcss className="tool-icon" />
                 <span>Taiwind</span>
               </li>
-              <FaSass className="tool-icon" />
-              <li>Sass</li>
+              <li>
+                <FaSass className="tool-icon" />
+                <span>Sass</span>
+              </li>
             </ul>
           </article>
           <article>
@@ -304,11 +305,8 @@ const Home = () => {
         <section className="contact-section">
           <h3 className="project-title">Reach me through socials</h3>
           <section className="contact-section-socials">
-          <div>
-              <Link
-                href="mailto:josephmariga@duck.com"
-                target="_blank"
-              >
+            <div>
+              <Link href="mailto:josephmariga@duck.com" target="_blank">
                 <SiGmail className="contact-react-icons" />
               </Link>
             </div>
