@@ -13,10 +13,9 @@ const page = () => {
       className="container flex flex-col mt-10 mb-24 lg:mt-28 text-gray-600 lg:gap-10 gap-5"
     >
       <h2 className="text-4xl font-semibold ">About Me</h2>
-      <div className="flex lg:flex-row flex-col ">
+      <div className="flex lg:flex-row flex-col-reverse gap-10">
         <div
-          className=" flex-1 flex flex-col gap-2 
-        items-center lg:pt-5 lg:px-10"
+          className=" flex-1 flex flex-col items-center lg:pt-5 lg:px-10"
         >
           <p className="text-justify text-large">
             As a full-stack JavaScript developer with a strong emphasis on
@@ -27,7 +26,7 @@ const page = () => {
             <strong>Typescript</strong> and <strong>Node.JS</strong> to develop
             responsive and user-friendly interfaces.
           </p>
-
+          <br />
           <p className="text-justify text-large">
             Having a background in <strong>auditing</strong> and{" "}
             <strong>accounting</strong> adds a unique dimension to my
@@ -36,6 +35,7 @@ const page = () => {
             complex challenges. I'm good at turning complex needs into practical
             solutions, making sure things work well and users are happy.
           </p>
+          <br />
           <p className="text-justify text-large">
             My <strong>goal</strong> is to continue leveraging my expertise in
             full-stack development, with a focus on front-end excellence, to
@@ -45,6 +45,7 @@ const page = () => {
             challenges, I thrive on delivering high-quality solutions that
             elevate the overall web experience.
           </p>
+          <br />
           <div className=" w-full">
             <p className="font-semibold">Get in touch.</p>
             <div className="">
