@@ -26,149 +26,178 @@ import {
   SiGmail,
 } from "react-icons/si";
 import placeholder from "@/public/assets/pic10.jpg";
+import { Button } from "@/components/ui/button";
+import Blog from "@/components/shared/blogpost";
+
 const Home = () => {
   return (
-    <>
-      <header className="containers" id="home">
-        <h1 className="title">Hello, I'm Joseph M.</h1>
-        <p className="title-p">
+    <div className="container text-gray-600 space-y-10 mb-20 lg:mb-0">
+      <header className="mt-10 lg:mt-32" id="home">
+        <h2 className="text-4xl mb-[0.35rem] font-semibold">Hello, i'm</h2>
+        <h1 className="text-5xl mb-3 font-semibold">Joseph Mariga</h1>
+        <p className="text-l mb-6">
           Fullstack developer with specialization on Front-end. I create
           seamless web experiences for end-users.
         </p>
-        <div>
-          <Link href="/about" className="about-link">
-            About me
-          </Link>
+        <div className="mb-6">
+          <Button asChild variant="default">
+            <Link href="/about" className="about-link">
+              About me
+            </Link>
+          </Button>
         </div>
-        <div className="social-links">
-          <div>
+        <div className="flex flex-row gap-4">
+          <div className="flex lg:flex-row md:flex-row">
             <Link
-              href="https://www.linkedin.com/in/joseph-muriuki-266186219"
+              href="https://www.linkedin.com/in/joseph-mariga-266186219/"
               target="_blank"
             >
-              LinkedIn
-            </Link>
-            <AiFillLinkedin className="react-icons" />
-          </div>
-          <div>
-            <Link href="https://wellfound.com/u/joseph-mariga" target="_blank">
-              Wellfound
+              <AiFillLinkedin className="react-icons" />
             </Link>
           </div>
           <div>
             <Link href="https://twitter.com/joseph_m254" target="_blank">
-              Twitter
+              <AiOutlineTwitter className="react-icons" />
             </Link>
-            <AiOutlineTwitter className="react-icons" />
           </div>
           <div>
             <Link href="https://github.com/Mariga94" target="_blank">
-              Github
+              <AiFillGithub className="react-icons" />
             </Link>
-            <AiFillGithub className="react-icons" />
           </div>
         </div>
-        <section>
-          <h2 className="section-title">About me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
-            exercitationem porro temporibus quod eligendi iure ipsum, alias
-            quidem ullam expedita velit. Dignissimos est itaque expedita commodi
-            ea maiores voluptatibus a!
-          </p>
-        </section>
       </header>
-      <section className="containers project-section" id="projects">
+
+      {/* Projects section */}
+      <section className="flex flex-col gap-5" id="projects">
         <h2 className="section-title">Featured Projects</h2>
-        <div className="projects-div">
-          <article>
-            <Image src={placeholder} alt="project-image" layout="responsive" />
+        <div className="flex lg:flex-row lg:flex-wrap flex-col gap-8">
+          <article className="project-card">
+            <Image
+              src={placeholder}
+              alt="project-image"
+              className="project-image"
+            />
             <h3 className="project-title">Porfolio website</h3>
             <h4>Next React Tailwind</h4>
-            <p>
+            <p className="project-description">
               My personal website build to showcase my porfolio and experiences
               as a software developer
             </p>
             <div className="view-links">
-              <Link href="" className="view-live-link">
-                View Live
-              </Link>
-              <Link href="" className="view-code-link">
-                View Code
-              </Link>
+              <Button asChild variant="default">
+                <Link href="" className="view-live-link">
+                  View Live
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="" className="view-code-link">
+                  View Code
+                </Link>
+              </Button>
             </div>
           </article>
-          <article>
-            <Image src={placeholder} alt="project-image" layout="responsive" />
+
+          <article className="project-card">
+            <Image
+              src={placeholder}
+              alt="project-image"
+              className="project-image"
+            />
             <h3 className="project-title">Porfolio website</h3>
             <h4>Next React Tailwind</h4>
-            <p>
+            <p className="project-description">
               My personal website build to showcase my porfolio and experiences
               as a software developer
             </p>
             <div className="view-links">
-              <Link href="" className="view-live-link">
-                View Live
-              </Link>
-              <Link href="" className="view-code-link">
-                View Code
-              </Link>
+              <Button asChild variant="default">
+                <Link href="" className="view-live-link">
+                  View Live
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="" className="view-code-link">
+                  View Code
+                </Link>
+              </Button>
             </div>
           </article>
-          <article>
-            <Image src={placeholder} alt="project-image" layout="responsive" />
+
+          <article className="project-card">
+            <Image
+              src={placeholder}
+              alt="project-image"
+              className="project-image"
+            />
             <h3 className="project-title">Porfolio website</h3>
             <h4>Next React Tailwind</h4>
-            <p>
+            <p className="project-description">
               My personal website build to showcase my porfolio and experiences
               as a software developer
             </p>
             <div className="view-links">
-              <Link href="" className="view-live-link">
-                View Live
-              </Link>
-              <Link href="" className="view-code-link">
-                View Code
-              </Link>
+              <Button asChild variant="default">
+                <Link href="" className="view-live-link">
+                  View Live
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="" className="view-code-link">
+                  View Code
+                </Link>
+              </Button>
             </div>
           </article>
-          <article>
-            <Image src={placeholder} alt="project-image" layout="responsive" />
+          <article className="project-card">
+            <Image
+              src={placeholder}
+              alt="project-image"
+              className="project-image"
+            />
             <h3 className="project-title">Porfolio website</h3>
             <h4>Next React Tailwind</h4>
-            <p>
+            <p className="project-description">
               My personal website build to showcase my porfolio and experiences
               as a software developer
             </p>
             <div className="view-links">
-              <Link href="" className="view-live-link">
-                View Live
-              </Link>
-              <Link href="" className="view-code-link">
-                View Code
-              </Link>
+              <Button asChild variant="default">
+                <Link href="" className="view-live-link">
+                  View Live
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="" className="view-code-link">
+                  View Code
+                </Link>
+              </Button>
             </div>
           </article>
         </div>
       </section>
-      <section className="containers service">
-        <h2 className="section-title">Services I offer</h2>
+
+      {/* blog section */}
+      <Blog/>
+      {/*Services section  */}
+      <section className="service">
+        <h2 className="section-title">Services I offer:</h2>
         <div className="service-section">
-          <article>
+          <article className="service-section-card">
             <CgWebsite className="service-icon" />
             <div>
               <h3 className="project-title">Website Development</h3>
-              <p>
+              <p className="project-description">
                 Building custom websites from scratch using HTML, CSS, and
                 JavaScript.
               </p>
             </div>
           </article>
-          <article>
+          <article className="service-section-card">
             <FaReact className="service-icon" />
             <div>
               <h3 className="project-title">Front-end Development</h3>
-              <p>
+              <p className="project-description">
                 I specialize in developing interactive and dynamic user
                 interfaces using modern JavaScript frameworks like React and
                 Next.js. Additionally, I have hands-on experience in
@@ -177,38 +206,37 @@ const Home = () => {
               </p>
             </div>
           </article>
-          <article>
+          <article className="service-section-card">
             <FaPython className="service-icon" />
             <div>
               <h3 className="project-title">Back-end Development</h3>
-              <ul>
-                <li>
-                  Building server-side applications and APIs using technologies
-                  like Node.js, Python, etc.
-                </li>
-              </ul>
+              <p className="project-description">
+                Building server-side applications and APIs using technologies
+                like Node.js, Python, etc.
+              </p>
             </div>
           </article>
-          <article>
+          <article className="service-section-card">
             <FaRocket className="service-icon" />
             <div>
               <h3 className="project-title">Full-stack Development</h3>
-              <p>
-                "I offer comprehensive end-to-end solutions to clients,
+              <p className="project-description">
+                I offer comprehensive end-to-end solutions to clients,
                 encompassing both front-end and back-end development. By
                 seamlessly integrating front-end and back-end components, I
-                ensure a cohesive and user-friendly experience for users."
+                ensure a cohesive and user-friendly experience for users.
               </p>
             </div>
           </article>
         </div>
       </section>
-      <section className="containers tools">
+
+      <section className="tools">
         <h2 className="section-title">Tools & Skills</h2>
         <section className="tool-section">
-          <article>
+          <article className="tool-card">
             <h3 className="project-title">Front-end</h3>
-            <ul>
+            <ul className="tool-list">
               <li>
                 <FaHtml5 className="tool-icon" />
                 <span>HTML</span>
@@ -243,9 +271,9 @@ const Home = () => {
               </li>
             </ul>
           </article>
-          <article>
+          <article className="tool-card">
             <h3 className="project-title">Backend</h3>
-            <ul>
+            <ul className="tool-list">
               <li>
                 <FaNodeJs className="tool-icon" />
                 <span>Nodejs</span>
@@ -272,9 +300,9 @@ const Home = () => {
               </li>
             </ul>
           </article>
-          <article>
+          <article className="tool-card">
             <h3 className="project-title">Miscellaneous</h3>
-            <ul>
+            <ul className="tool-list">
               <li>
                 <FaGithub className="tool-icon" />
                 <span>Github</span>
@@ -290,17 +318,11 @@ const Home = () => {
             </ul>
           </article>
         </section>
-        <section className="languages">
-          <p>
-            I speak <span className="flag">English GB</span>
-          </p>
-
-          <p>
-            Nazungumza <span>Kiswahi SWA</span>
-          </p>
-        </section>
       </section>
-      <section className="containers" id="contact">
+
+      
+      {/* Contact section */}
+      <section className="contact" id="contact">
         <h3 className="section-title">Connect with me:</h3>
         <section className="contact-section">
           <h3 className="project-title">Reach me through socials</h3>
@@ -331,8 +353,25 @@ const Home = () => {
           </section>
         </section>
       </section>
-    </>
+    </div>
   );
 };
 
 export default Home;
+
+// My focus is in creating
+// responsive layouts using JavaScript stack of React, Nextjs and NodeJs,
+// and with my background with auditing and accounting I'm well
+// acquainted to bringing out solutions to complex problems.
+
+{
+  /* <section>
+          <h2 className="section-title">About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+            exercitationem porro temporibus quod eligendi iure ipsum, alias
+            quidem ullam expedita velit. Dignissimos est itaque expedita commodi
+            ea maiores voluptatibus a!
+          </p>
+        </section> */
+}
