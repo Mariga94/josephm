@@ -8,11 +8,16 @@ import Blog from "@/components/shared/blogpost";
 
 const page = () => {
   return (
-    <section id="#about" className="container flex flex-col mt-10 mb-24 lg:mt-28 text-gray-600 lg:gap-16 gap-5">
-      <h2 className="text-4xl mb-[0.35rem] font-semibold ">About Me</h2>
-      <div className="flex lg:flex-row flex-col">
-        <div className=" flex-1 flex flex-col gap-2 
-        items-center lg:pt-10 lg:px-10">
+    <section
+      id="#about"
+      className="container flex flex-col mt-10 mb-24 lg:mt-28 text-gray-600 lg:gap-10 gap-5"
+    >
+      <h2 className="text-4xl font-semibold ">About Me</h2>
+      <div className="flex lg:flex-row flex-col ">
+        <div
+          className=" flex-1 flex flex-col gap-2 
+        items-center lg:pt-5 lg:px-10"
+        >
           <p className="text-justify text-large">
             As a full-stack JavaScript developer with a strong emphasis on
             front-end expertise, I am dedicated to creating seamless and
@@ -42,27 +47,27 @@ const page = () => {
           </p>
           <div className=" w-full">
             <p className="font-semibold">Get in touch.</p>
-          <div className="">
-            <Link
-              href="https://www.linkedin.com/in/joseph-mariga-266186219/"
-              target="_blank"
-            >
-              <AiFillLinkedin className="react-icons" />
-            </Link>
-          </div>
+            <div className="">
+              <Link
+                href="https://www.linkedin.com/in/joseph-mariga-266186219/"
+                target="_blank"
+              >
+                <AiFillLinkedin className="react-icons" />
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="flex-1 lg:px-16">
+        <div className="flex-1 lg:px-24 max-h-[55rem]">
           <Image
             src={profilePhoto}
             alt="profile-photo"
-            className="rounded-lg w-full"
+            className="rounded-lg w-full h-full"
           />
         </div>
       </div>
 
       <Project />
-      <Blog/>
+      <Blog />
     </section>
   );
 };

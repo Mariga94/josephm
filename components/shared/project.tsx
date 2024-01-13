@@ -5,9 +5,9 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 const Project = () => {
   return (
-    <section className="flex flex-col gap-5" id="projects">
+    <section className="flex flex-col projects" id="projects">
       <h2 className="section-title">Featured Projects</h2>
-      <div className="flex lg:flex-row lg:flex-wrap flex-col gap-8">
+      <div className="flex flex-wrap lg:flex-row gap-8 items-center justify-center">
         <article className="project-card">
           <Image
             src={placeholder}
@@ -36,7 +36,6 @@ const Project = () => {
             </Button>
           </div>
         </article>
-
         <article className="project-card">
           <Image
             src={placeholder}
@@ -68,7 +67,6 @@ const Project = () => {
             </Button>
           </div>
         </article>
-
         <article className="project-card">
           <Image
             src={placeholder}

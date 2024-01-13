@@ -5,9 +5,9 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 const Blog = () => {
   return (
-    <section className="flex flex-col gap-5" id="blog">
+    <section className="flex flex-col blog" id="blog">
       <h2 className="section-title ">Blog Posts</h2>
-      <div className="flex lg:flex-row lg:flex-wrap flex-col gap-8">
+      <div className="flex lg:flex-row lg:flex-wrap flex-col items-center justify-center gap-8">
         <article className="project-card">
           <div className=" h-60 bg-black rounded-lg">
             <Image

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { AiFillLinkedin, AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import {
@@ -28,11 +27,12 @@ import {
 import placeholder from "@/public/assets/pic10.jpg";
 import { Button } from "@/components/ui/button";
 import Blog from "@/components/shared/blogpost";
+import Project from "@/components/shared/project";
 
 const Home = () => {
   return (
     <div className="container text-gray-600 space-y-10 mb-20 lg:mb-0">
-      <header className="mt-10 lg:mt-32" id="home">
+      <header className="mt-10 lg:mt-32 md:mt-32" id="home">
         <h2 className="text-4xl mb-[0.35rem] font-semibold">Hello, i'm</h2>
         <h1 className="text-5xl mb-3 font-semibold">Joseph Mariga</h1>
         <p className="text-l mb-6">
@@ -69,126 +69,19 @@ const Home = () => {
       </header>
 
       {/* Projects section */}
-      <section className="flex flex-col gap-5" id="projects">
-        <h2 className="section-title">Featured Projects</h2>
-        <div className="flex lg:flex-row lg:flex-wrap flex-col gap-8">
-          <article className="project-card">
-            <Image
-              src={placeholder}
-              alt="project-image"
-              className="project-image"
-            />
-            <h3 className="project-title">Porfolio website</h3>
-            <h4>Next React Tailwind</h4>
-            <p className="project-description">
-              My personal website build to showcase my porfolio and experiences
-              as a software developer
-            </p>
-            <div className="view-links">
-              <Button asChild variant="default">
-                <Link href="" className="view-live-link">
-                  View Live
-                </Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="" className="view-code-link">
-                  View Code
-                </Link>
-              </Button>
-            </div>
-          </article>
-
-          <article className="project-card">
-            <Image
-              src={placeholder}
-              alt="project-image"
-              className="project-image"
-            />
-            <h3 className="project-title">Porfolio website</h3>
-            <h4>Next React Tailwind</h4>
-            <p className="project-description">
-              My personal website build to showcase my porfolio and experiences
-              as a software developer
-            </p>
-            <div className="view-links">
-              <Button asChild variant="default">
-                <Link href="" className="view-live-link">
-                  View Live
-                </Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="" className="view-code-link">
-                  View Code
-                </Link>
-              </Button>
-            </div>
-          </article>
-
-          <article className="project-card">
-            <Image
-              src={placeholder}
-              alt="project-image"
-              className="project-image"
-            />
-            <h3 className="project-title">Porfolio website</h3>
-            <h4>Next React Tailwind</h4>
-            <p className="project-description">
-              My personal website build to showcase my porfolio and experiences
-              as a software developer
-            </p>
-            <div className="view-links">
-              <Button asChild variant="default">
-                <Link href="" className="view-live-link">
-                  View Live
-                </Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="" className="view-code-link">
-                  View Code
-                </Link>
-              </Button>
-            </div>
-          </article>
-          <article className="project-card">
-            <Image
-              src={placeholder}
-              alt="project-image"
-              className="project-image"
-            />
-            <h3 className="project-title">Porfolio website</h3>
-            <h4>Next React Tailwind</h4>
-            <p className="project-description">
-              My personal website build to showcase my porfolio and experiences
-              as a software developer
-            </p>
-            <div className="view-links">
-              <Button asChild variant="default">
-                <Link href="" className="view-live-link">
-                  View Live
-                </Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="" className="view-code-link">
-                  View Code
-                </Link>
-              </Button>
-            </div>
-          </article>
-        </div>
-      </section>
-
+      <Project />
       {/* blog section */}
-      <Blog/>
+      <Blog />
       {/*Services section  */}
       <section className="service">
-        <h2 className="section-title">Services I offer:</h2>
+        <h2 className="section-title">Services I offer</h2>
         <div className="service-section">
           <article className="service-section-card">
             <CgWebsite className="service-icon" />
             <div>
               <h3 className="project-title">Website Development</h3>
               <p className="project-description">
-                Building custom websites from scratch using HTML, CSS, and
+                Building custom websites from scratch using HTML, CSS, React and
                 JavaScript.
               </p>
             </div>
@@ -320,7 +213,6 @@ const Home = () => {
         </section>
       </section>
 
-      
       {/* Contact section */}
       <section className="contact" id="contact">
         <h3 className="section-title">Connect with me:</h3>

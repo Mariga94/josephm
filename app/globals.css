@@ -70,14 +70,15 @@ html {
 }
 
 .project-card {
-  @apply bg-gray-50 hover:bg-gray-100 lg:w-[36rem] flex flex-col gap-2 p-4 rounded-lg ;
+  @apply bg-gray-50 hover:bg-gray-100 w-full lg:w-1/2 xl:max-w-[37rem] p-4 
+  flex flex-col gap-2 rounded-lg;
 }
 
 .project-image {
   @apply rounded-lg object-cover max-h-96 w-full;
 }
 .blog-image {
-  @apply rounded-lg object-cover max-h-60 w-full ;
+  @apply rounded-lg object-cover max-h-60 w-full;
 }
 
 .project-title {
@@ -92,27 +93,35 @@ html {
   @apply flex flex-row gap-5;
 }
 
-.service {
-  @apply flex flex-col gap-4;
+.service,
+.tools,
+.blog,
+.projects {
+  @apply flex flex-col lg:gap-12 gap-5;
 }
 .service-section {
-  @apply flex lg:flex-row flex-wrap flex-col gap-4;
+  @apply flex lg:flex-row flex-wrap flex-col gap-4 justify-center items-center;
 }
 
 .service-section-card {
-  @apply lg:w-[37rem] lg:h-[20rem] flex flex-col items-center justify-start rounded-2xl border-2 border-gray-300 p-4 hover:bg-gray-100;
+  @apply w-full lg:w-1/2 xl:max-w-[37rem] flex flex-col items-center justify-start rounded-2xl border-2 border-gray-300 p-4 hover:bg-gray-100;
+}
+
+.service-section-card:nth-child(1),
+.service-section-card:nth-child(4) {
+  @apply border-primary;
+}
+.service-section-card:nth-child(2) > div > .project-title,
+.service-section-card:nth-child(3) > div > .project-title {
+  @apply text-primary;
 }
 
 .service-section-card > div {
-  @apply flex flex-col items-center justify-start gap-4 h-full;
+  @apply flex flex-col items-center  gap-4 h-full;
 }
 
 .service-icon {
   @apply text-6xl h-[35%];
-}
-
-.tools {
-  @apply flex flex-col gap-4;
 }
 
 .tool-section {
@@ -120,7 +129,7 @@ html {
 }
 
 .tool-card {
-  @apply w-full lg:w-[20rem] flex flex-col items-center border-2 border-gray-300 p-4 hover:bg-gray-100;
+  @apply w-full lg:w-[30rem] flex flex-col items-center border-2 border-gray-300 p-4 hover:bg-gray-100 gap-5;
 }
 
 .tool-icon,
@@ -145,5 +154,5 @@ html {
 }
 
 .contact-section-socials {
-  @apply flex flex-row lg:gap-12 justify-between w-full lg:w-min;
+  @apply flex flex-row lg:gap-12 justify-between w-full lg:w-min md:w-min md:gap-10;
 }
