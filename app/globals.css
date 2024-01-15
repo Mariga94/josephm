@@ -104,7 +104,7 @@ html {
 }
 
 .service-section-card {
-  @apply w-full lg:w-1/2 xl:max-w-[37rem] flex flex-col items-center justify-start rounded-2xl border-2 border-gray-300 p-4 hover:bg-gray-100;
+  @apply w-full lg:w-1/2 xl:max-w-[37rem] flex flex-col items-center justify-start rounded-2xl border-2 border-gray-300 p-4 hover:bg-gray-100 lg:h-52 md:h-52;
 }
 
 .service-section-card:nth-child(1),

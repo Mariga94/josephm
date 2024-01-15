@@ -24,7 +24,6 @@ import {
   SiExpress,
   SiGmail,
 } from "react-icons/si";
-import placeholder from "@/public/assets/pic10.jpg";
 import { Button } from "@/components/ui/button";
 import Blog from "@/components/shared/blogpost";
 import Project from "@/components/shared/project";
@@ -32,10 +31,11 @@ import Project from "@/components/shared/project";
 const Home = () => {
   return (
     <div className="container text-gray-600 space-y-10 mb-20 lg:mb-0">
-      <header className="mt-10 lg:mt-32 md:mt-32" id="home">
+      <header className="mt-10 lg:mt-32 pb-10 md:mt-32" id="home">
         <h2 className="text-4xl mb-[0.35rem] font-semibold">Hello, i'm</h2>
         <h1 className="text-5xl mb-3 font-semibold">Joseph Mariga</h1>
-        <p className="text-l mb-6">
+        
+        <p className="text-lg mb-6">
           Fullstack developer with specialization on Front-end. I create
           seamless web experiences for end-users.
         </p>
@@ -215,7 +215,7 @@ const Home = () => {
 
       {/* Contact section */}
       <section className="contact" id="contact">
-        <h3 className="section-title">Connect with me:</h3>
+        <h3 className="section-title">Connect with me</h3>
         <section className="contact-section">
           <h3 className="project-title">Reach me through socials</h3>
           <section className="contact-section-socials">

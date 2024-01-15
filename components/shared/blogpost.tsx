@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import placeholder from "@/public/assets/pic10.jpg";
 import Link from "next/link";
 import { Button } from "../ui/button";
 const Blog = () => {
   return (
     <section className="flex flex-col blog" id="blog">
       <h2 className="section-title ">Blog Posts</h2>
-      <div className="flex lg:flex-row lg:flex-wrap flex-col items-center justify-center gap-8">
+      <section className="flex lg:flex-row lg:flex-wrap flex-col items-center justify-center gap-8">
         <article className="project-card">
-          <div className=" h-60 bg-black rounded-lg">
+          <div className="rounded-lg ">
             <Image
               src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*A6URfTh8ItitCCkC7QZImQ.png"
               width={300}
@@ -18,7 +17,7 @@ const Blog = () => {
               className="blog-image"
             />
           </div>
-          <h3 className="project-title">How I build my first MVP.</h3>
+          <h3 className="project-title">Let's look at how I was able to build my first Minimal Viable Product.</h3>
           <p className="project-description">
             Check out how I build an furniture store using a simple challenging
             statement.
@@ -63,7 +62,7 @@ const Blog = () => {
             </Button>
           </div>
         </article>
-      </div>
+      </section>
     </section>
   );
 };
