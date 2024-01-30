@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import furnishImg from "@/public/assets/furnish.png";
@@ -7,12 +6,10 @@ import { Button } from "../ui/button";
 import VedioPlayer from "./vedioPlayer";
 
 const Project = () => {
-  
   return (
     <section className="flex flex-col projects" id="projects">
       <h2 className="section-title">Featured Projects</h2>
       <div className="flex flex-wrap lg:flex-row gap-8 items-center justify-center">
-       
         <article className="project-card">
           <VedioPlayer url={"https://youtu.be/l2gelp5PJ0k"} />
           <h3 className="project-title">HomeHub</h3>
@@ -23,7 +20,10 @@ const Project = () => {
           </p>
           <div className="view-links">
             <Button asChild variant="default">
-              <Link href="" className="view-live-link">
+              <Link
+                href="https://homehub-tan.vercel.app/"
+                className="view-live-link"
+              >
                 View Live
               </Link>
             </Button>
@@ -96,12 +96,15 @@ const Project = () => {
             </Button>
           </div>
         </article>
-        
+
         <article className="project-card">
           <VedioPlayer url={"https://youtu.be/QwoJ8fW-r2k"} />
           <h3 className="project-title">Seek</h3>
           <h4>React Tailwind MongoDB</h4>
-          <p className="project-description">A client project build</p>
+
+          <div className="project-description block bg-red-500 text-white rounded-full p-2 w-60 text-center">
+            Client project In progress
+          </div>
           <div className="view-links">
             <Button asChild variant="default">
               <Link
@@ -111,7 +114,7 @@ const Project = () => {
                 View Live
               </Link>
             </Button>
-            <Button asChild variant="outline" >
+            <Button asChild variant="outline">
               <Link href="" className="view-code-link">
                 View Code
               </Link>
